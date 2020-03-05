@@ -1,0 +1,32 @@
+1. Run the http_server.py
+-------------------------
+sudo python2 http_server.py
+
+Note: Run the server using sudo
+
+2. After running the server, we should get the output as shown below
+-------------------------------------------------------------
+http server is starting...
+http server is running...
+
+3. Run the http_client.py
+-------------------------
+python http_client.py 127.0.0.1
+
+4. After running the client, the output from client side will be as shown below,
+-------------------------------------------------------------
+input command (ex. GET index.html): GET sample.html
+(200, 'OK')
+<head>
+ <title>Sample HTML</title>
+</head>
+<body>
+ <h1>Coding is Awesome</h1>
+ <h1>Hello World</h1>
+</body>
+
+5. Output from the server side should look like
+------------------------------------------------
+127.0.0.1 - - [03/Jun/2019 21:48:10] "GET sample.html HTTP/1.1" 200 -
+
+Note: Change the path of the sample.html file in the server program
